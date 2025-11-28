@@ -1,9 +1,43 @@
 {% extends "base.html" %}
-{% block title %}Arduino {% endblock %}
+{% block title %}Arduino{% endblock %}
 {% block content %}
 <h1>ARDUINO UNO</h1>
+
 <p>
-    Arduino es una plataforma de hardware y software libre que permite construir proyectos electrónicos interactivos. Está compuesta por una placa de microcontrolador fácil de usar y un entorno de desarrollo integrado (IDE) en la computadora, que facilita la escritura de código para controlar dispositivos físicos. Es versátil y popular entre principiantes y expertos para crear desde sistemas simples, como encender luces con un sensor, hasta proyectos complejos de robótica o Internet de las Cosas (IoT). 
+    Arduino es una plataforma de hardware y software libre que permite construir proyectos electrónicos interactivos. 
+    Está basada en placas con microcontroladores que se pueden programar fácilmente mediante el entorno de desarrollo Arduino IDE. 
+    Su simplicidad, versatilidad y bajo costo la convierten en una de las herramientas más utilizadas en educación, prototipado y proyectos de robótica, automatización e Internet de las Cosas (IoT).
 </p>
 
+<h2>Características de Arduino Uno</h2>
+<p>
+    Arduino Uno es una de las placas más populares. Utiliza el microcontrolador ATmega328P y cuenta con varias entradas y salidas digitales y analógicas, lo que permite conectar sensores, motores, LEDs, pantallas y más. 
+    Es ideal para quienes comienzan en electrónica y programación, pero también es muy utilizado en proyectos avanzados por su estabilidad y facilidad de uso.
+</p>
+
+<h2>Componentes Principales de una Placa Arduino</h2>
+
+<ul>
+    <li><b>Microcontrolador (ATmega328P):</b> Es el cerebro de la placa, donde se ejecuta el programa cargado.</li>
+    <li><b>Pines digitales:</b> Se utilizan para leer o enviar señales digitales (encendido/apagado).</li>
+    <li><b>Pines analógicos:</b> Permiten leer señales con valores variables, como sensores de temperatura o luz.</li>
+    <li><b>Puerto USB:</b> Sirve para cargar el código desde la computadora y alimentar la placa.</li>
+    <li><b>Regulador de voltaje:</b> Mantiene la alimentación estable para proteger los componentes.</li>
+    <li><b>Botón de reset:</b> Reinicia el programa que está corriendo en el microcontrolador.</li>
+    <li><b>LED integrado (pin 13):</b> Útil para pruebas rápidas de funcionamiento.</li>
+</ul>
+
+<h2>Componentes Externos Frecuentes en Proyectos Arduino</h2>
+
+<ul>
+    <li><b>LEDs:</b> Iluminación básica para señales visuales.</li>
+    <li><b>Resistencias:</b> Controlan el flujo de corriente para proteger los componentes.</li>
+    <li><b>Sensores:</b> Como sensores de temperatura, humedad, movimiento, ultrasonido, etc.</li>
+    <li><b>Servomotores y motores DC:</b> Para movimiento y robótica.</li>
+    <li><b>Potenciómetros:</b> Controladores analógicos usados para ajustar valores.</li>
+    <li><b>Pantallas LCD u OLED:</b> Para mostrar información.</li>
+    <li><b>Protoboard:</b> Para armar circuitos sin necesidad de soldar.</li>
+    <li><b>Módulos de comunicación:</b> Bluetooth, WiFi, RFID, etc.</li>
+</ul>
+<img src="{{url_for('static',filename='img/arduino.png')}}" alt="">
 {% endblock %}

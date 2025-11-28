@@ -1,8 +1,42 @@
 {% extends "base.html" %}
-{% block title %}Github {% endblock %}
+{% block title %}Github{% endblock %}
 {% block content %}
 <h1>GITHUB</h1>
+
 <p>
-    GitHub es una plataforma en la nube que aloja proyectos usando el sistema de control de versiones Git. Permite a los desarrolladores colaborar en código, compartir proyectos y rastrear cambios a lo largo del tiempo. Además de su uso principal en software, se puede usar para otros tipos de proyectos, como documentación o libros, y ofrece servicios como alojamiento de sitios web (GitHub Pages) y automatización (GitHub Actions). 
+    GitHub es una plataforma en la nube que permite almacenar, gestionar y colaborar en proyectos utilizando el sistema de control de versiones Git. 
+    Es ampliamente utilizado en el desarrollo de software para trabajar en equipo, realizar seguimiento de cambios y mantener un historial completo de las versiones de un proyecto.
 </p>
+
+<h2>¿Qué es Git?</h2>
+<p>
+    Git es un sistema de control de versiones distribuido que permite guardar y gestionar los cambios realizados en uno o varios archivos a lo largo del tiempo. 
+    Gracias a Git, es posible crear ramas (branches), combinar cambios (merge), revertir errores y trabajar de forma paralela sin perder el historial del proyecto.
+</p>
+
+<h2>¿Qué aporta GitHub?</h2>
+<p>
+    GitHub toma todo lo que ofrece Git y lo lleva a la nube, permitiendo que los proyectos estén disponibles para cualquier usuario autorizado desde cualquier lugar. 
+    Además, ofrece herramientas adicionales que hacen más fácil la colaboración y organización entre equipos de desarrollo.
+</p>
+
+<h2>Funciones principales de GitHub</h2>
+<ul>
+    <li><b>Repositorios:</b> Espacios donde se almacena el código y todo el historial de cambios.</li>
+    <li><b>Commits:</b> Registros de cada cambio realizado en el proyecto.</li>
+    <li><b>Branches (ramas):</b> Permiten trabajar en nuevas características sin afectar la versión principal.</li>
+    <li><b>Pull Requests:</b> Solicitudes para fusionar cambios entre ramas, usadas para revisiones de código en equipo.</li>
+    <li><b>Issues:</b> Herramientas para reportar errores, sugerir mejoras o organizar tareas.</li>
+    <li><b>GitHub Pages:</b> Servicio para publicar sitios web directamente desde un repositorio.</li>
+    <li><b>GitHub Actions:</b> Automatización de flujos de trabajo como pruebas, despliegues o compilaciones.</li>
+    <li><b>Wikis:</b> Documentación del proyecto alojada dentro del mismo repositorio.</li>
+</ul>
+
+<h2>¿Por qué usar GitHub?</h2>
+<p>
+    GitHub facilita el trabajo colaborativo, permite compartir proyectos con la comunidad, mantiene un registro detallado de cambios y ofrece múltiples servicios integrados que ayudan a mejorar la calidad del software. 
+    Es una herramienta esencial tanto para estudiantes como para profesionales del desarrollo.
+</p>
+<img src="{{url_for('static',filename='img/git hub.png')}}" alt="">
+
 {% endblock %}
