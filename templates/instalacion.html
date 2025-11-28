@@ -1,8 +1,47 @@
 {% extends "base.html" %}
-{% block title %}Instalación {% endblock %}
+{% block title %}Instalación{% endblock %}
 {% block content %}
-<h1>INSTALACION</h1>
+<h1>INSTALACIÓN</h1>
+
 <p>
-     Flask es un microframework de desarrollo web para Python, que proporciona herramientas básicas y flexibilidad para crear aplicaciones web rápidamente. Se caracteriza por ser ligero y minimalista, lo que permite a los desarrolladores elegir las extensiones y bibliotecas que necesiten para construir sus aplicaciones. 
+    Flask es un microframework de desarrollo web para Python, que proporciona herramientas básicas y flexibilidad para crear aplicaciones web rápidamente. 
+    Se caracteriza por ser ligero y minimalista, permitiendo a los desarrolladores elegir las extensiones y bibliotecas necesarias para sus proyectos.
 </p>
+
+<h2>1. Crear un entorno virtual</h2>
+<p>El entorno virtual permite aislar las dependencias del proyecto para evitar conflictos con otras instalaciones de Python.</p>
+
+<pre>
+<span>python -m venv venv</span>
+</pre>
+
+<p>Esto creará una carpeta llamada <b>venv</b> que contendrá el entorno virtual.</p>
+
+<h2>2. Activar el entorno virtual</h2>
+
+<h3>En Windows:</h3>
+<pre>
+<span>venv\Scripts\activate</span>
+</pre>
+
+<h3>En Linux / Mac:</h3>
+<pre>
+<span>source venv/bin/activate</span>
+</pre>
+
+<p>Al activarlo, la consola mostrará el nombre del entorno virtual al inicio de la línea.</p>
+
+<h2>3. Instalar Flask</h2>
+<p>Con el entorno virtual activado, instalamos Flask con pip:</p>
+
+<pre>
+<span>pip install flask</span>
+</pre>
+
+<p>Podés verificar la instalación usando:</p>
+
+<pre>
+<span>pip show flask</span>
+</pre>
+
 {% endblock %}
