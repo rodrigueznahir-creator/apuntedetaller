@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Estructura {% endblock %}
+{% block content %}
+<h1>ESTRUCTURA</h1>
+<p> La estructura de un proyecto Flask puede variar, pero típicamente incluye un archivo principal (app.py), un directorio static para archivos estáticos (CSS, JS, imágenes) y un directorio templates para las plantillas HTML. Flask es flexible, por lo que puedes organizarlo de la manera que mejor se adapte a tu proyecto, desde un solo archivo simple hasta una estructura compleja con carpetas como models, routes y services.  </p>
+<p>en la estructura unos de los archivos importantes se encuentra en la carpeta template es base.html, que contiene el siguiente codigo:</p>
+<img src="{{url_for('static',filename='img/basehtml.png')}}" alt="">
+<p>El archivo app.py en Flask sirve como el punto de partida principal de una aplicación web, conteniendo la lógica central, la inicialización de la instancia de Flask y las definiciones de las rutas (vistas) que manejan las solicitudes de los usuarios. Es el archivo que se ejecuta para correr el servidor, y generalmente organiza todo el código principal de la aplicación, desde la configuración inicial hasta la lógica de las distintas funciones y modelos de la aplicación. </p>
+<img src="{{url_for('static',filename='img/app.png')}}" alt="">
+{% endblock %}
