@@ -1,10 +1,117 @@
+/* --- LO QUE YA TENÍAS (NO MODIFICADO) --- */
 body{
     background-color: aquamarine;
 }
+
 button{ 
     background-color: aqua;
     font-size: 30px;
-    border-radius:10px ;
-    color:black;
+    border-radius: 10px;
+    color: black;
     cursor: pointer;
 }
+
+/* --- MEJORAS AÑADIDAS --- */
+
+/* Fuente más estética */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Suavizar colores y mejorar contraste */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 255, 200, 0.4),
+        rgba(0, 180, 255, 0.4)
+    );
+    z-index: -1;
+}
+
+/* Contenedor general */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin-top: 40px;
+}
+
+/* Títulos más llamativos */
+h1, h2, h3 {
+    text-align: center;
+    color: #024f52;
+    text-shadow: 1px 1px 2px white;
+}
+
+/* Párrafos mejorados */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #003b3f;
+}
+
+/* Botón con animación */
+button {
+    padding: 10px 25px;
+    border: none;
+    transition: 0.3s ease;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    transform: scale(1.08);
+    background-color: #00d0ff;
+}
+
+/* Navegación */
+nav {
+    background-color: rgba(255,255,255,0.7);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #004b4d;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    color: #0099cc;
+}
+
+/* Cuadros de información */
+.card {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    margin: 20px 0;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Logos o imágenes */
+img {
+    display: block;
+    margin: 20px auto;
+}
+
+
+
